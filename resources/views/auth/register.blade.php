@@ -44,6 +44,14 @@
 
         <button type="submit">Register</button>
 
+        @if ($errors->any()) 
+            <ul>
+                @foreach ( $errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
+
     </form>
 
     <a href="{{ route('show.login') }}">Already have an account? Login here</a>
