@@ -9,8 +9,10 @@
 <body>
     <h1>Home</h1>
     <p>
-        Homescreen.
+        Homescreen. Add questions by clicking the link below.
     </p>
+
+    <a href="{{route('show.create')}}">Add Questions here</a>
 
     <form action="{{route('logout')}}" method="POST">
         @csrf
